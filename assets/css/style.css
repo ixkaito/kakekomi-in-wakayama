@@ -150,11 +150,29 @@ html, body {
 }
 
 /* line 13, ../_sass/style.scss */
+body {
+  background: #34495e;
+}
+
+/* line 17, ../_sass/style.scss */
 .map-container {
+  position: relative;
   width: 100%;
   height: 100%;
+  padding: 50px 10px 10px;
 }
-/* line 18, ../_sass/style.scss */
+/* line 24, ../_sass/style.scss */
+.map-container h1.app-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  padding-left: 10px;
+}
+/* line 35, ../_sass/style.scss */
 .map-container #map {
   width: 100%;
   height: 100%;
