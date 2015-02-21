@@ -1,6 +1,11 @@
 @charset "UTF-8";
-@import "reset";
+// @import "reset";
 @import "compass";
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+$navy: #34495e;
 
 * {
 	@include box-sizing(border-box);
@@ -11,7 +16,7 @@ html, body {
 }
 
 body {
-	background: #34495e;
+	background: $navy;
 }
 
 .map-container {
@@ -28,12 +33,40 @@ body {
 		color: #fff;
 		font-size: 18px;
 		font-weight: bold;
-		line-height: 50px;
 		padding-left: 10px;
 	}
 
 	#map {
 		width: 100%;
 		height: 100%;
+	}
+}
+
+.menu {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	width: 50px;
+	height: 50px;
+	background: $navy;
+	@include border-radius(50px);
+	z-index: 99;
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+
+	i {
+		font-size: 24px;
+		line-height: 50px;
+	}
+
+	&:hover {
+		color: #fff;
+
+		i {
+			color: #fff;
+		}
 	}
 }
