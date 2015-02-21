@@ -1,12 +1,22 @@
 @charset "UTF-8";
-// @import "reset";
 @import "compass";
 @import "bootstrap-compass";
 @import "bootstrap-variables";
 @import "bootstrap";
 
+/*
+================================================================================
+	variables
+================================================================================
+*/
 $navy: #34495e;
 
+
+/*
+================================================================================
+	style
+================================================================================
+*/
 * {
 	@include box-sizing(border-box);
 }
@@ -23,17 +33,18 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	padding: 50px 10px 10px;
+	padding-top: 50px;
 	// padding: 50px 0;
 
 	h1.app-title {
 		position: absolute;
 		top: 0;
 		left: 0;
+		width: 100%;
 		color: #fff;
 		font-size: 18px;
 		font-weight: bold;
-		padding-left: 10px;
+		padding: 0 10px;
 	}
 
 	#map {
@@ -44,8 +55,9 @@ body {
 
 .menu {
 	position: fixed;
-	bottom: 40px;
-	right: 40px;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -25px;
 	width: 50px;
 	height: 50px;
 	background: $navy;
