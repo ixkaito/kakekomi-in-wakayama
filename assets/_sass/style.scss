@@ -44,7 +44,7 @@ body {
 		color: #fff;
 		font-size: 18px;
 		font-weight: bold;
-		padding: 0 10px;
+		padding: 0 20px;
 	}
 
 	#map {
@@ -81,4 +81,15 @@ body {
 			color: #fff;
 		}
 	}
+}
+
+.setting {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	background: $navy;
+	z-index: 999;
+	text-align: center;
 }

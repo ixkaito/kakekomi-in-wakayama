@@ -8067,7 +8067,7 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 /* line 50, ../_sass/style.scss */
 .map-container #map {
@@ -8106,4 +8106,16 @@ body {
 /* line 80, ../_sass/style.scss */
 .menu:hover i {
   color: #fff;
+}
+
+/* line 86, ../_sass/style.scss */
+.setting {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: #34495e;
+  z-index: 999;
+  text-align: center;
 }
