@@ -7,8 +7,8 @@ var now = new Date();
 var hour   = ('0' + now.getHours()).slice(-2);
 var minute = ('0' + now.getMinutes()).slice(-2);
 
-var viewTime = document.getElementById('time');
-viewTime.innerHTML = hour + ':' + minute;
+// var viewTime = document.getElementById('time');
+// viewTime.innerHTML = hour + ':' + minute;
 
 // Visualize the heatmap of current time
 kakekomiMap(hour, minute);
@@ -24,6 +24,27 @@ function time2minute(time) {
   time = parseInt(time[0], 10) * 60 + parseInt(time[1], 10);
   return time;
 }
+
+
+/*
+================================================================================
+  Select time
+================================================================================
+*/
+var selectHour    = document.getElementById('hour');
+var selectMinute  = document.getElementById('minute');
+var submitSetting = document.getElementById('submit-setting');
+
+selectHour.value = now.getHours();
+selectMinute.value = Math.floor(now.getMinutes()/10)*10;
+
+submitSetting.onclick = function() {
+  var hour = selectHour.value;
+  var minute = selectMinute.value;
+  kakekomiMap(hour, minute);
+  return false;
+};
+
 
 /*
 ================================================================================

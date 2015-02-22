@@ -8056,7 +8056,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  padding: 50px 15px 62px;
 }
 /* line 39, ../_sass/style.scss */
 .map-container h1.app-title {
@@ -8067,7 +8067,7 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 /* line 50, ../_sass/style.scss */
 .map-container #map {
@@ -8076,46 +8076,67 @@ body {
 }
 
 /* line 56, ../_sass/style.scss */
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #34495e;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 68, ../_sass/style.scss */
 .menu {
   position: fixed;
   bottom: 20px;
   left: 50%;
   margin-left: -25px;
-  width: 50px;
-  height: 50px;
-  background: #34495e;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
   z-index: 99;
-  color: #fff;
-  font-size: 24px;
-  line-height: 50px;
-  text-align: center;
-  display: block;
 }
-/* line 72, ../_sass/style.scss */
+/* line 75, ../_sass/style.scss */
 .menu i {
   font-size: 24px;
   line-height: 50px;
 }
-/* line 77, ../_sass/style.scss */
+/* line 80, ../_sass/style.scss */
 .menu:hover {
   color: #fff;
 }
-/* line 80, ../_sass/style.scss */
+/* line 83, ../_sass/style.scss */
 .menu:hover i {
   color: #fff;
 }
 
-/* line 86, ../_sass/style.scss */
+/* line 89, ../_sass/style.scss */
 .setting {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   background: #34495e;
   z-index: 999;
   text-align: center;
+}
+/* line 99, ../_sass/style.scss */
+.setting .colon {
+  color: #fff;
+}
+/* line 103, ../_sass/style.scss */
+.setting #submit-setting {
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 112, ../_sass/style.scss */
+.form-inline .form-control, .navbar-form .form-control {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
 }

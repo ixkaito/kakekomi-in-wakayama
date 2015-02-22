@@ -33,8 +33,8 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	padding-top: 50px;
-	// padding: 50px 0;
+	// padding-top: 50px;
+	padding: 50px 15px 62px;
 
 	h1.app-title {
 		position: absolute;
@@ -44,7 +44,7 @@ body {
 		color: #fff;
 		font-size: 18px;
 		font-weight: bold;
-		padding: 0 20px;
+		padding: 0 15px;
 	}
 
 	#map {
@@ -53,21 +53,24 @@ body {
 	}
 }
 
+.circle-btn {
+	width: 50px;
+	height: 50px;
+	@include border-radius(50px);
+	background: $navy;
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
 .menu {
 	position: fixed;
 	bottom: 20px;
 	left: 50%;
 	margin-left: -25px;
-	width: 50px;
-	height: 50px;
-	background: $navy;
-	@include border-radius(50px);
 	z-index: 99;
-	color: #fff;
-	font-size: 24px;
-	line-height: 50px;
-	text-align: center;
-	display: block;
 
 	i {
 		font-size: 24px;
@@ -88,8 +91,27 @@ body {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 20px;
+	padding: 15px;
 	background: $navy;
 	z-index: 999;
 	text-align: center;
+
+	.colon {
+		color: #fff;
+	}
+
+	#submit-setting {
+		margin-left: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.form-inline {
+
+	.form-control {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+	}
 }
